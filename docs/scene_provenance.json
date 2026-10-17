@@ -1,0 +1,438 @@
+{
+  "can": {
+    "source": "scene_sources/can_original22_disjoint_v1.json",
+    "source_sha256": "ebef484180084643e4c04cc509d18f09153b8c6d882c7d02e48e96a096a68bb0",
+    "selection_config": "analysis_results/v1_block_10id_v6_demo150_199__20260922_112515/configs/can_scenes.yaml",
+    "selection_config_sha256": "831fd223f561db7e1dbc53518e3ebbfba22d92d85e640ba2330843df607b33b5",
+    "mapping": [
+      {
+        "scene_id": 0,
+        "difficulty": "easy",
+        "original_pool_index": 0,
+        "original_source_scene_id": 0,
+        "visual_sha256": "5dc4d8c64c46762a70d640e202cc7e62026fe7082cc230702b4563f3b3473d08"
+      },
+      {
+        "scene_id": 1,
+        "difficulty": "easy",
+        "original_pool_index": 8,
+        "original_source_scene_id": 8,
+        "visual_sha256": "3f9d25568665733969760ea4b9968c238fcb7b16b4a72f0a76320a6151dc0df0"
+      },
+      {
+        "scene_id": 2,
+        "difficulty": "easy",
+        "original_pool_index": 9,
+        "original_source_scene_id": 9,
+        "visual_sha256": "03a02977f30a9b44f254785e121bf1d0a49f6dcd5da6a1e7ed9315dec9330bfc"
+      },
+      {
+        "scene_id": 3,
+        "difficulty": "easy",
+        "original_pool_index": 14,
+        "original_source_scene_id": 14,
+        "visual_sha256": "e591a7d385a6ac2b572bd14ce6767d682dc04547630a58e0314589f0aaaf5658"
+      },
+      {
+        "scene_id": 4,
+        "difficulty": "easy",
+        "original_pool_index": 15,
+        "original_source_scene_id": 15,
+        "visual_sha256": "2890e47c4527627451a44e0b56c7c62c2a2e731280adbebc78bb19c3c532dc84"
+      },
+      {
+        "scene_id": 5,
+        "difficulty": "easy",
+        "original_pool_index": 18,
+        "original_source_scene_id": 18,
+        "visual_sha256": "9546f5c9dd0a355b5cecd568c560ee9be1e112d50fa0e1feb35294d292ed61ca"
+      },
+      {
+        "scene_id": 6,
+        "difficulty": "easy",
+        "original_pool_index": 19,
+        "original_source_scene_id": 19,
+        "visual_sha256": "e51a92e9c7e78769e264e44c5e414cb575e8435b302c2971c4212fb8823a6e9c"
+      },
+      {
+        "scene_id": 7,
+        "difficulty": "easy",
+        "original_pool_index": 24,
+        "original_source_scene_id": 24,
+        "visual_sha256": "1ef175158304163e0d9e1b0b2168a15a6bc99a16611cb753a34cb2d3e4083244"
+      },
+      {
+        "scene_id": 8,
+        "difficulty": "easy",
+        "original_pool_index": 28,
+        "original_source_scene_id": 28,
+        "visual_sha256": "007f967ab1cb880c6048dc7fda21ce95fc9a56faa6d226ac501401624b83568f"
+      },
+      {
+        "scene_id": 9,
+        "difficulty": "easy",
+        "original_pool_index": 29,
+        "original_source_scene_id": 29,
+        "visual_sha256": "88596095f15465a8b60dbe410d4ff73d68017ddede2a58cbfd2df71eb46d10e1"
+      },
+      {
+        "scene_id": 10,
+        "difficulty": "medium",
+        "original_pool_index": 32,
+        "original_source_scene_id": 2,
+        "visual_sha256": "7339008e77db12abfbfb6fe7ce643d1bf5682d19d5d9bea3e989b39910cdc185"
+      },
+      {
+        "scene_id": 11,
+        "difficulty": "medium",
+        "original_pool_index": 35,
+        "original_source_scene_id": 5,
+        "visual_sha256": "e1eafb77852afb6ef5dc8f4e84fdcf70a027b71a9325088d978b4180c53040a0"
+      },
+      {
+        "scene_id": 12,
+        "difficulty": "medium",
+        "original_pool_index": 41,
+        "original_source_scene_id": 11,
+        "visual_sha256": "6750e7c98b46ada601620d4a8ee1d43d83ea9260831b25b9d92b9bf3db6f517a"
+      },
+      {
+        "scene_id": 13,
+        "difficulty": "medium",
+        "original_pool_index": 42,
+        "original_source_scene_id": 12,
+        "visual_sha256": "9e1d32a32dd981828672ef037e0e2d41b891e043a7bd1b11414e4244abd2c248"
+      },
+      {
+        "scene_id": 14,
+        "difficulty": "medium",
+        "original_pool_index": 43,
+        "original_source_scene_id": 13,
+        "visual_sha256": "c7d877fbf42a5bd645cf51f0ba19568076093513ac08d18f947a940faf520c75"
+      },
+      {
+        "scene_id": 15,
+        "difficulty": "medium",
+        "original_pool_index": 48,
+        "original_source_scene_id": 18,
+        "visual_sha256": "201feb1b25ce010c6ead8a07dc7007af6010ebae0146030ff3d988b8932b85b9"
+      },
+      {
+        "scene_id": 16,
+        "difficulty": "medium",
+        "original_pool_index": 50,
+        "original_source_scene_id": 20,
+        "visual_sha256": "29ab47feba399c2a4ead46887ead50757ab097bbb071cf4a2324ee04af7e80de"
+      },
+      {
+        "scene_id": 17,
+        "difficulty": "medium",
+        "original_pool_index": 51,
+        "original_source_scene_id": 21,
+        "visual_sha256": "edcbb8257ce3692fef4cb1fd25bf3d715b122e8585c6531a8be4f01a196aac07"
+      },
+      {
+        "scene_id": 18,
+        "difficulty": "medium",
+        "original_pool_index": 53,
+        "original_source_scene_id": 23,
+        "visual_sha256": "8e7a7bd02dedb8f54e0db7a74e2f2539b0a54d8d3358a8a063f71318a49c4c9d"
+      },
+      {
+        "scene_id": 19,
+        "difficulty": "medium",
+        "original_pool_index": 57,
+        "original_source_scene_id": 27,
+        "visual_sha256": "04fc8e6b2f060ce4e3697b7d75b6003ee6289174cf2c19d8dc5681716160a079"
+      },
+      {
+        "scene_id": 20,
+        "difficulty": "hard",
+        "original_pool_index": 64,
+        "original_source_scene_id": 4,
+        "visual_sha256": "85d3ac865a314b11b39698fb5350e606f8418c2c42624e67bef3d4f450da505d"
+      },
+      {
+        "scene_id": 21,
+        "difficulty": "hard",
+        "original_pool_index": 66,
+        "original_source_scene_id": 6,
+        "visual_sha256": "22237d97e2b03d19b626355440b2805a2753b6e70499ad29e54667ee6900d32f"
+      },
+      {
+        "scene_id": 22,
+        "difficulty": "hard",
+        "original_pool_index": 68,
+        "original_source_scene_id": 8,
+        "visual_sha256": "9eedcd34e52e069268516102116d72dd2103d86428159951810e8b1f5115ad2b"
+      },
+      {
+        "scene_id": 23,
+        "difficulty": "hard",
+        "original_pool_index": 72,
+        "original_source_scene_id": 12,
+        "visual_sha256": "e17dd06a4f9ba1ccb5c2dd15cb583359c5ef453294477c68b1e4fe9469b84e2d"
+      },
+      {
+        "scene_id": 24,
+        "difficulty": "hard",
+        "original_pool_index": 76,
+        "original_source_scene_id": 16,
+        "visual_sha256": "5ac860185b35ab494f7ce26fea5d25ca6a9342008b6db204b9c7f193db8b5b00"
+      },
+      {
+        "scene_id": 25,
+        "difficulty": "hard",
+        "original_pool_index": 77,
+        "original_source_scene_id": 17,
+        "visual_sha256": "8bf4a1ed2d8853ccf001defc2716d7487721d692589694d24ffe5438dbef1487"
+      },
+      {
+        "scene_id": 26,
+        "difficulty": "hard",
+        "original_pool_index": 79,
+        "original_source_scene_id": 19,
+        "visual_sha256": "82d9c2da45306f9b791f9d2d1d6ad43afd710415df8148d8f652a33e7a508b66"
+      },
+      {
+        "scene_id": 27,
+        "difficulty": "hard",
+        "original_pool_index": 80,
+        "original_source_scene_id": 20,
+        "visual_sha256": "b06549297f200fc0842a1b30cd601800ebc3f94130754bbad4bfb588fb401ad1"
+      },
+      {
+        "scene_id": 28,
+        "difficulty": "hard",
+        "original_pool_index": 81,
+        "original_source_scene_id": 21,
+        "visual_sha256": "f407af4f973b2ef5a79d0c27c4c39165024f84d9e034a2605ef9033255bea15d"
+      },
+      {
+        "scene_id": 29,
+        "difficulty": "hard",
+        "original_pool_index": 89,
+        "original_source_scene_id": 29,
+        "visual_sha256": "d36af7342cd0b03c3afd0c17a5279540177e04d6ded0d08b1a15ec268c592ba7"
+      }
+    ]
+  },
+  "square": {
+    "source": "scene_sources/square_default_v1.json",
+    "source_sha256": "219bfe2068d22e0f86bf5b6a86be62c30aa9647efa3b3929862d9de6a8efb5ce",
+    "selection_config": "analysis_results/v1_block_10id_v6_demo150_199__20260922_112515/configs/square_scenes.yaml",
+    "selection_config_sha256": "3eb91a3bfc2c9259b4af976090152b2dd7057eee1cae945c249a86fabf306df5",
+    "mapping": [
+      {
+        "scene_id": 0,
+        "difficulty": "easy",
+        "original_pool_index": 3,
+        "original_source_scene_id": 3,
+        "visual_sha256": "8e98fb426f9d1fd05caad079326eaa4ae53187b1f06581918e92d8a085fbd1e2"
+      },
+      {
+        "scene_id": 1,
+        "difficulty": "easy",
+        "original_pool_index": 6,
+        "original_source_scene_id": 6,
+        "visual_sha256": "155d180c1e20d7ce5c5f1bc886d4a2eefe6c4e7b60aa7c39ce88e3c1cefa5612"
+      },
+      {
+        "scene_id": 2,
+        "difficulty": "easy",
+        "original_pool_index": 7,
+        "original_source_scene_id": 7,
+        "visual_sha256": "ea024a66bec8d1c30ea83d0051e7effa05682b3356d72934f030f9f02e927a07"
+      },
+      {
+        "scene_id": 3,
+        "difficulty": "easy",
+        "original_pool_index": 10,
+        "original_source_scene_id": 10,
+        "visual_sha256": "931ff33b80a0454c92304aeaed1b65e4afd923e2e26750b54b5baefb53ff2af2"
+      },
+      {
+        "scene_id": 4,
+        "difficulty": "easy",
+        "original_pool_index": 12,
+        "original_source_scene_id": 12,
+        "visual_sha256": "38235bfc8bafc5b1b03581e4d08c7f5f29a9f335c07d075bf5f05d6b5aecba51"
+      },
+      {
+        "scene_id": 5,
+        "difficulty": "easy",
+        "original_pool_index": 18,
+        "original_source_scene_id": 18,
+        "visual_sha256": "3259b78dd436868e45607aa458dcaf3c7a03db11cfc877fb5bbe8532b5cf5602"
+      },
+      {
+        "scene_id": 6,
+        "difficulty": "easy",
+        "original_pool_index": 21,
+        "original_source_scene_id": 21,
+        "visual_sha256": "a85c3a0b1dc949bdb55a5c59d110de5819d56ad6fc5361837fb4cbb50a70604c"
+      },
+      {
+        "scene_id": 7,
+        "difficulty": "easy",
+        "original_pool_index": 22,
+        "original_source_scene_id": 22,
+        "visual_sha256": "9ac9e504b46eeb9d2041ef27722def397eb0473a017859fe8fe7a8fe22d58571"
+      },
+      {
+        "scene_id": 8,
+        "difficulty": "easy",
+        "original_pool_index": 25,
+        "original_source_scene_id": 25,
+        "visual_sha256": "498c67a09d441616054bf64ccae39f5a007b4a3a53826fdb7ef0c76db82b5377"
+      },
+      {
+        "scene_id": 9,
+        "difficulty": "easy",
+        "original_pool_index": 28,
+        "original_source_scene_id": 28,
+        "visual_sha256": "69e61c4fdf22dca7a1cf343902bf04c337f4f54785f01d45bab469592180c163"
+      },
+      {
+        "scene_id": 10,
+        "difficulty": "medium",
+        "original_pool_index": 30,
+        "original_source_scene_id": 0,
+        "visual_sha256": "3f835df17666467ccc18aabf676b81a16801e14a375167ccd7e1b83fa8720f85"
+      },
+      {
+        "scene_id": 11,
+        "difficulty": "medium",
+        "original_pool_index": 33,
+        "original_source_scene_id": 3,
+        "visual_sha256": "019ecaae5053309420fddbf7f3275a9ff216ae8f83a19bbabbef2c1dd73dcb5a"
+      },
+      {
+        "scene_id": 12,
+        "difficulty": "medium",
+        "original_pool_index": 34,
+        "original_source_scene_id": 4,
+        "visual_sha256": "c1b09d2267f4c19dfebce590ce38705f0b9d9eab7036c9c46f1ebd50aaaed679"
+      },
+      {
+        "scene_id": 13,
+        "difficulty": "medium",
+        "original_pool_index": 40,
+        "original_source_scene_id": 10,
+        "visual_sha256": "c4b602cf117f16c12546685ecd6962a80c0b67567af846391c547c284e6a74c0"
+      },
+      {
+        "scene_id": 14,
+        "difficulty": "medium",
+        "original_pool_index": 42,
+        "original_source_scene_id": 12,
+        "visual_sha256": "f30d640dd192a3b5538b097af98c1dc12302091026b74863783c5684af37e7b7"
+      },
+      {
+        "scene_id": 15,
+        "difficulty": "medium",
+        "original_pool_index": 43,
+        "original_source_scene_id": 13,
+        "visual_sha256": "1802bb084cab5c926a6a083e54c350044baf7f0a2a7c0e0831ccf5912c650f97"
+      },
+      {
+        "scene_id": 16,
+        "difficulty": "medium",
+        "original_pool_index": 44,
+        "original_source_scene_id": 14,
+        "visual_sha256": "36afe2d3705f1be9fd6473edd2b71651521f7bde613fe17fc0fb2ef406e6ab7f"
+      },
+      {
+        "scene_id": 17,
+        "difficulty": "medium",
+        "original_pool_index": 45,
+        "original_source_scene_id": 15,
+        "visual_sha256": "b1178e1d26ff19c7e439f69d16718141d20e01f23935467f30f0c55e6100775a"
+      },
+      {
+        "scene_id": 18,
+        "difficulty": "medium",
+        "original_pool_index": 57,
+        "original_source_scene_id": 27,
+        "visual_sha256": "90705564b28411a2f52bf74750578e3ea91c57533b85ce9c2617533284d7ce8c"
+      },
+      {
+        "scene_id": 19,
+        "difficulty": "medium",
+        "original_pool_index": 58,
+        "original_source_scene_id": 28,
+        "visual_sha256": "7507deaa39c65d44e6d93aec4e5b1b84904647dd3a2f2c56a1436d518ff92622"
+      },
+      {
+        "scene_id": 20,
+        "difficulty": "hard",
+        "original_pool_index": 66,
+        "original_source_scene_id": 6,
+        "visual_sha256": "299c02b5043d67918d365f40e532c4dcc3d164cf13644fc4cac7bfd3bf9a7d2b"
+      },
+      {
+        "scene_id": 21,
+        "difficulty": "hard",
+        "original_pool_index": 67,
+        "original_source_scene_id": 7,
+        "visual_sha256": "fa0393501898b8a984a6a312903a5ac0ea06b2608f62bd18cace669bba4f2991"
+      },
+      {
+        "scene_id": 22,
+        "difficulty": "hard",
+        "original_pool_index": 68,
+        "original_source_scene_id": 8,
+        "visual_sha256": "5f227365dc680abc10b056932b1016fdf1f2070bca099496ecfd83c4b51a2e3a"
+      },
+      {
+        "scene_id": 23,
+        "difficulty": "hard",
+        "original_pool_index": 70,
+        "original_source_scene_id": 10,
+        "visual_sha256": "7c1f1c33aa53d90e18e1bb74d06d0eaa4f3e0e225459d2a8f2a0c226887734e4"
+      },
+      {
+        "scene_id": 24,
+        "difficulty": "hard",
+        "original_pool_index": 72,
+        "original_source_scene_id": 12,
+        "visual_sha256": "3b4c67a5734050777fe3e789ebe3f4ed914a3f1cc075e17d4582cdb2eaa2b645"
+      },
+      {
+        "scene_id": 25,
+        "difficulty": "hard",
+        "original_pool_index": 73,
+        "original_source_scene_id": 13,
+        "visual_sha256": "c2030dbbd40a5625f0ae8659d35276e4b66ca5b7a17223da7dd8e4bf63c3f43c"
+      },
+      {
+        "scene_id": 26,
+        "difficulty": "hard",
+        "original_pool_index": 76,
+        "original_source_scene_id": 16,
+        "visual_sha256": "ec9feca067f42955b88b313dcb5d8d06df4327c4fff7501f359a72323d50119f"
+      },
+      {
+        "scene_id": 27,
+        "difficulty": "hard",
+        "original_pool_index": 79,
+        "original_source_scene_id": 19,
+        "visual_sha256": "5280bc9ea8c76dbd00e613cca7be5da0b05f67de9a6ab073847713fe093efcf6"
+      },
+      {
+        "scene_id": 28,
+        "difficulty": "hard",
+        "original_pool_index": 83,
+        "original_source_scene_id": 23,
+        "visual_sha256": "329816923344060d3d350137bfacf0de906649ccd90873278cc5c8203abf8aff"
+      },
+      {
+        "scene_id": 29,
+        "difficulty": "hard",
+        "original_pool_index": 85,
+        "original_source_scene_id": 25,
+        "visual_sha256": "28a2beb5e7b45b1d238f8cfabf15486c393653929135f4ab4c78b291bce5f664"
+      }
+    ]
+  }
+}

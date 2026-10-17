@@ -1,0 +1,28 @@
+# STAR Stage 1: 1000 collection steps, then one learner update per step.
+# No gradient clipping. DrQ teacher with forward dynamics (dyna=5) and replay collection.
+env: dmc
+task_name: cheetah_run
+algo: star_stage1
+dyna: fwd
+dyna_alpha: 5
+action_repeat: 4
+batch_size: 256
+buffer_save: true
+encoder_tau: 0.05
+encoder_type: default
+eval_every_frames: 500k
+ln: true
+lr: 0.0001
+num_eval_episodes: 30
+init_steps: 1000
+num_seed_frames: 1000
+num_train_frames: 500000
+repr_dim: 100
+seed: 300
+use_ib: false
+use_target_enc: false
+exp_name: star_stage1_cheetah_seed300
+wandb_project: STAR
+wandb_group: stage1
+wandb_mode: null
+wandb_entity: null

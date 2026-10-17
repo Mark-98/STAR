@@ -1,0 +1,47 @@
+# Main STAR Stage 2: feature reconstruction with a frozen teacher actor.
+# actor_load/actor_update are accepted for source CLI compatibility; ignored for mlp.
+# This does NOT train a new teacher or add a stage-2 dynamics loss.
+env: dmc
+task_name: cheetah_run
+algo: star_stage2
+actor_load: true
+actor_update: true
+gen_type: mlp
+freeze_aug_encoder_mlp: false
+clean_loss: false
+rc: false
+dyna_alpha: 5
+expected_teacher_dyna_alpha: 5
+action_repeat: 4
+batch_size: 256
+encoder_tau: 0.05
+encoder_type: default
+eval_every_frames: 100k
+gen_layer: 4
+ln: true
+lr: 0.0001
+num_eval_episodes: 30
+num_train_frames: 100000
+overlay_type: random
+q_act_sample: false
+repr_dim: 100
+seed: 600
+use_ib: false
+use_target_enc: false
+weak_aug: true
+require_full_replay: true
+replay_dataset_index: -1
+replay_dataset_start: -1
+replay_dataset_end: -1
+replay_dataset_tail_count: -1
+replay_dataset_start_ratio: -1
+replay_dataset_end_ratio: -1
+replay_dataset_tail_ratio: -1
+replay_buffer_size: 1000000
+replay_buffer_num_workers: 4
+exp_name: star_stage2_mlp_cheetah_seed600
+# Safe default: choose --wandb_mode online explicitly to upload.
+wandb_mode: null
+wandb_project: STAR
+wandb_entity: null
+wandb_group: stage2

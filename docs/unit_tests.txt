@@ -1,0 +1,12 @@
+test_close_reaches_simulator (test_core.CoreTests) ... ok
+test_feature_loss_and_parameter_freezing (test_core.CoreTests) ... ok
+test_geometric_training_argument (test_core.CoreTests) ... ok
+test_legacy_state_keeps_geometric_transform (test_core.CoreTests) ... ok
+test_only_star_agents (test_core.CoreTests) ... ok
+test_robosuite_keyword_argument_order (test_core.CoreTests) ... ok
+test_transform_shape_and_seed (test_core.CoreTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.111s
+
+OK

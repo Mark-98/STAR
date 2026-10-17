@@ -1,0 +1,218 @@
+{
+  "date": "2026-10-11",
+  "scope": "Bounded execution verification, not full retraining or published-score reproduction.",
+  "checkpoint_filename_update": {
+    "default_filename": "checkpoints/last_snapshot.ckpt",
+    "score_named_checkpoints_disabled_by_default": true,
+    "legacy_latest_resume_supported": true,
+    "public_training_cli": {
+      "passed": true,
+      "tasks": ["can", "square"],
+      "stages_per_task": ["base", "star"],
+      "epochs_per_stage": 1,
+      "max_train_steps_per_stage": 1,
+      "max_validation_steps_per_stage": 1,
+      "rollout_steps": 8,
+      "checkpoint_setting_overrides": false,
+      "only_last_snapshot_created_in_all_four_runs": true
+    },
+    "model_roundtrip": {
+      "tasks": ["can", "square"],
+      "checkpoint_predictions_bitwise_equal": true,
+      "frozen_parameters_unchanged": true,
+      "scope": "Reduced UNet, one minibatch update per stage, four denoising steps."
+    },
+    "tests": {
+      "checkpoint_tests_passed_in_dp_environment": 6,
+      "existing_tests_passed_in_rl_environment": 29,
+      "optional_dp_tests_skipped_in_rl_environment": 6
+    },
+    "scope": "Checkpoint persistence checks, not full training or benchmark evaluation."
+  },
+  "environment": {
+    "fresh_conda": true,
+    "system_site_packages": false,
+    "python": "3.9.18",
+    "renderer": "OSMesa",
+    "policy_device": "RTX 4090 CUDA",
+    "pip_check": "No broken requirements found",
+    "mujoco_extension": "built in the new environment from bundled MuJoCo 2.1",
+    "installation_corrections": [
+      "Added missing pandas==1.5.3 after workspace import failure.",
+      "Pinned pip numba==0.53.1 to satisfy Robosuite; removed conflicting Conda 0.56.4 pin.",
+      "Final edited recipe also passed conda dry-run; full creation used the initial recipe plus the pandas correction."
+    ],
+    "packages": {
+      "torch": "1.12.1",
+      "torchvision": "0.13.1",
+      "robomimic": "0.2.0",
+      "robosuite": "1.2.0",
+      "free-mujoco-py": "2.1.6",
+      "numpy": "1.23.3",
+      "numba": "0.53.1",
+      "pandas": "1.5.3",
+      "diffusers": "0.11.1",
+      "huggingface-hub": "0.10.1",
+      "hydra-core": "1.2.0",
+      "zarr": "2.12.0",
+      "numcodecs": "0.10.2",
+      "imagecodecs": "2022.9.26",
+      "pytorch3d": "0.7.0",
+      "gym": "0.21.0",
+      "av": "10.0.0"
+    }
+  },
+  "public_datasets": {
+    "source": "https://diffusion-policy.cs.columbia.edu/data/training/robomimic_image.zip",
+    "archive_bytes": 84754919326,
+    "method": "HTTP range extraction of two prepared PH absolute-action members",
+    "both_match_preexisting_experiment_data_sha256": true,
+    "files": [
+      {
+        "bytes": 2010694944,
+        "sha256": "6eb74b811a47c94a4409aa6f8f070b172dd8bd2d5190d020209b515b97573e03",
+        "zip_crc_verified": true,
+        "task": "can"
+      },
+      {
+        "bytes": 2603429840,
+        "sha256": "08aa2d987061ed6e30da20e64ad8f56c0b8524bf55b516181754b22c271d4f1e",
+        "zip_crc_verified": true,
+        "task": "square"
+      }
+    ]
+  },
+  "model_checks": [
+    {
+      "passed": true,
+      "task": "can",
+      "device": "cuda:0",
+      "base_loss": 0.9821346402168274,
+      "star_loss": 0.025716956704854965,
+      "base_updates": 1,
+      "star_updates": 1,
+      "frozen_parameters_unchanged": true,
+      "checkpoint_predictions_bitwise_equal": true,
+      "batch_source": "two demonstrations, first 32 rows each",
+      "overlay_source": "places365",
+      "scope": "Reduced UNet, one minibatch update per stage, four denoising steps. Not a simulator, full training, or benchmark test."
+    },
+    {
+      "passed": true,
+      "task": "square",
+      "device": "cuda:0",
+      "base_loss": 0.9640918970108032,
+      "star_loss": 0.0344020314514637,
+      "base_updates": 1,
+      "star_updates": 1,
+      "frozen_parameters_unchanged": true,
+      "checkpoint_predictions_bitwise_equal": true,
+      "batch_source": "two demonstrations, first 32 rows each",
+      "overlay_source": "places365",
+      "scope": "Reduced UNet, one minibatch update per stage, four denoising steps. Not a simulator, full training, or benchmark test."
+    }
+  ],
+  "git_export_model_check": {
+    "passed": true,
+    "task": "can",
+    "device": "cuda:0",
+    "base_loss": 0.9821346402168274,
+    "star_loss": 0.025716882199048996,
+    "base_updates": 1,
+    "star_updates": 1,
+    "frozen_parameters_unchanged": true,
+    "checkpoint_predictions_bitwise_equal": true,
+    "batch_source": "two demonstrations, first 32 rows each",
+    "overlay_source": "places365",
+    "scope": "Reduced UNet, one minibatch update per stage, four denoising steps. Not a simulator, full training, or benchmark test."
+  },
+  "training_entrypoints": {
+    "passed": true,
+    "task": "can",
+    "stages": [
+      "base",
+      "star"
+    ],
+    "epochs_per_stage": 1,
+    "max_train_steps_per_stage": 1,
+    "max_validation_steps_per_stage": 1,
+    "rollout_steps": 8,
+    "scope": "CLI integration check with reduced model and truncated rollout; not benchmark training."
+  },
+  "evaluations": [
+    {
+      "task": "can",
+      "dependency_stack": "existing_dp_dependencies",
+      "episodes": 8,
+      "max_steps": 400,
+      "models": "Base and STAR, one episode per condition",
+      "policy": "existing full-size checkpoints, no inference-step override",
+      "benchmark_quality_claim": false
+    },
+    {
+      "task": "square",
+      "dependency_stack": "existing_dp_dependencies",
+      "episodes": 8,
+      "max_steps": 400,
+      "models": "Base and STAR, one episode per condition",
+      "policy": "existing full-size checkpoints, no inference-step override",
+      "benchmark_quality_claim": false
+    },
+    {
+      "task": "can",
+      "dependency_stack": "new_conda_environment",
+      "episodes": 8,
+      "max_steps": 400,
+      "models": "Base and STAR, one episode per condition",
+      "policy": "fresh reduced-UNet, four denoising steps",
+      "benchmark_quality_claim": false
+    },
+    {
+      "task": "square",
+      "dependency_stack": "new_conda_environment",
+      "episodes": 8,
+      "max_steps": 400,
+      "models": "Base and STAR, one episode per condition",
+      "policy": "fresh reduced-UNet, four denoising steps",
+      "benchmark_quality_claim": false
+    }
+  ],
+  "total_complete_evaluation_episodes": 32,
+  "overlay_fixture": "16 public Places365 validation JPEGs, test-only ImageFolder; not the full training split.",
+  "conversion_check": {
+    "passed": true,
+    "checks": [
+      {
+        "task": "can",
+        "rows": 16,
+        "max_absolute_difference_from_prepared_actions": 0.10142988773761348,
+        "max_difference_after_first_row": 3.946090690321036e-09,
+        "prepared_data_identical": false,
+        "input_unchanged": true
+      },
+      {
+        "task": "square",
+        "rows": 16,
+        "max_absolute_difference_from_prepared_actions": 0.03521169241361943,
+        "max_difference_after_first_row": 2.8978026422876724e-08,
+        "prepared_data_identical": false,
+        "input_unchanged": true
+      }
+    ]
+  },
+  "unit_tests": 29,
+  "limitations": [
+    "No full 3050-epoch Base / 20-epoch STAR retraining.",
+    "Only one demonstration reset per condition; no meaningful success-rate estimate.",
+    "Only the first fixed visual scene per difficulty/task rendered; registry hashes checked for all scenes.",
+    "Outcome-selected historical scenes are not untouched held-out data.",
+    "EGL rendering, another host/driver and full Places365 training distribution were not verified."
+  ],
+  "source_hashes": {
+    "environments/diffusion.yaml": "8975be94acb62445f3634c911fbae726a9e5b0839aaff41bd23c7bb833aae71b",
+    "configs/scenes/can.json": "fc45b211d5b099de337d814a8a4ae424b213aff4e5fad57d4c398c433544384e",
+    "configs/scenes/square.json": "f168589e5a7cd036ecb5b1472f55562d19bedcfb8c6e1d16e86e7e88b986ab16",
+    "star/evaluation/diffusion.py": "dce7a57a90ad422d44f8039ba524e5d3dc1dedd4baad578109f93c83e08285a4",
+    "star/training/diffusion.py": "c60c491c7f44c079f9cde14b9f5e9002555b06d0a5e89dda806bd495dfcce870"
+  }
+}

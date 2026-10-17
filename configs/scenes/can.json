@@ -1,0 +1,607 @@
+{
+  "version": "star-v1",
+  "source_version": "v6",
+  "task": "can",
+  "records": [
+    {
+      "scene_id": 0,
+      "difficulty": "easy",
+      "local_scene_index": 0,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-easy",
+      "source_split": "easy_scene",
+      "source_scene_id": 0,
+      "source_rollout_index": 0,
+      "texture_map": {
+        "floor": "WoodTiles",
+        "pp_table1": "PlasterGray",
+        "pp_table2": "WoodDark",
+        "table_legs": "Metal",
+        "wall": "PlasterGray"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 1,
+      "difficulty": "easy",
+      "local_scene_index": 1,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-easy",
+      "source_split": "easy_scene",
+      "source_scene_id": 1,
+      "source_rollout_index": 1,
+      "texture_map": {
+        "floor": "FeltGray",
+        "pp_table1": "PlasterGray",
+        "pp_table2": "Ceramic",
+        "table_legs": "SteelBrushed",
+        "wall": "PlasterWhite"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 2,
+      "difficulty": "easy",
+      "local_scene_index": 2,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-easy",
+      "source_split": "easy_scene",
+      "source_scene_id": 2,
+      "source_rollout_index": 2,
+      "texture_map": {
+        "floor": "FeltGray",
+        "pp_table1": "WoodLight",
+        "pp_table2": "WoodDark",
+        "table_legs": "SteelBrushed",
+        "wall": "PlasterCream"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 3,
+      "difficulty": "easy",
+      "local_scene_index": 3,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-easy",
+      "source_split": "easy_scene",
+      "source_scene_id": 3,
+      "source_rollout_index": 3,
+      "texture_map": {
+        "floor": "WoodgrainGray",
+        "pp_table1": "WoodLight",
+        "pp_table2": "WoodDark",
+        "table_legs": "Metal",
+        "wall": "Clay"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 4,
+      "difficulty": "easy",
+      "local_scene_index": 4,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-easy",
+      "source_split": "easy_scene",
+      "source_scene_id": 4,
+      "source_rollout_index": 4,
+      "texture_map": {
+        "floor": "WoodTiles",
+        "pp_table1": "PlasterCream",
+        "pp_table2": "WoodDark",
+        "table_legs": "Metal",
+        "wall": "PlasterCream"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 5,
+      "difficulty": "easy",
+      "local_scene_index": 5,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-easy",
+      "source_split": "easy_scene",
+      "source_scene_id": 5,
+      "source_rollout_index": 5,
+      "texture_map": {
+        "floor": "WoodTiles",
+        "pp_table1": "WoodLight",
+        "pp_table2": "PlasterGray",
+        "table_legs": "SteelBrushed",
+        "wall": "PlasterWhite"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 6,
+      "difficulty": "easy",
+      "local_scene_index": 6,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-easy",
+      "source_split": "easy_scene",
+      "source_scene_id": 6,
+      "source_rollout_index": 6,
+      "texture_map": {
+        "floor": "FeltGray",
+        "pp_table1": "PlasterCream",
+        "pp_table2": "PlasterGray",
+        "table_legs": "SteelBrushed",
+        "wall": "PlasterCream"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 7,
+      "difficulty": "easy",
+      "local_scene_index": 7,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-easy",
+      "source_split": "easy_scene",
+      "source_scene_id": 7,
+      "source_rollout_index": 7,
+      "texture_map": {
+        "floor": "WoodgrainGray",
+        "pp_table1": "WoodDark",
+        "pp_table2": "PlasterGray",
+        "table_legs": "Metal",
+        "wall": "PlasterGray"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 8,
+      "difficulty": "easy",
+      "local_scene_index": 8,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-easy",
+      "source_split": "easy_scene",
+      "source_scene_id": 8,
+      "source_rollout_index": 8,
+      "texture_map": {
+        "floor": "WoodgrainGray",
+        "pp_table1": "WoodLight",
+        "pp_table2": "PlasterCream",
+        "table_legs": "Metal",
+        "wall": "Clay"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 9,
+      "difficulty": "easy",
+      "local_scene_index": 9,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-easy",
+      "source_split": "easy_scene",
+      "source_scene_id": 9,
+      "source_rollout_index": 9,
+      "texture_map": {
+        "floor": "FeltGray",
+        "pp_table1": "WoodLight",
+        "pp_table2": "PlasterGray",
+        "table_legs": "Metal",
+        "wall": "PlasterWhite"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 10,
+      "difficulty": "medium",
+      "local_scene_index": 0,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-medium",
+      "source_split": "medium_scene",
+      "source_scene_id": 10,
+      "source_rollout_index": 10,
+      "texture_map": {
+        "floor": "WoodGreen",
+        "pp_table1": "Custom05",
+        "pp_table2": "WoodBlue",
+        "table_legs": "SteelScratched",
+        "wall": "WoodgrainGray"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 11,
+      "difficulty": "medium",
+      "local_scene_index": 1,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-medium",
+      "source_split": "medium_scene",
+      "source_scene_id": 11,
+      "source_rollout_index": 11,
+      "texture_map": {
+        "floor": "Custom03",
+        "pp_table1": "Custom04",
+        "pp_table2": "Custom02",
+        "table_legs": "SteelBrushed",
+        "wall": "WoodRed"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 12,
+      "difficulty": "medium",
+      "local_scene_index": 2,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-medium",
+      "source_split": "medium_scene",
+      "source_scene_id": 12,
+      "source_rollout_index": 12,
+      "texture_map": {
+        "floor": "WoodgrainGray",
+        "pp_table1": "WoodGreen",
+        "pp_table2": "Custom03",
+        "table_legs": "Metal",
+        "wall": "Custom03"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 13,
+      "difficulty": "medium",
+      "local_scene_index": 3,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-medium",
+      "source_split": "medium_scene",
+      "source_scene_id": 13,
+      "source_rollout_index": 13,
+      "texture_map": {
+        "floor": "WoodRed",
+        "pp_table1": "Custom01",
+        "pp_table2": "WoodBlue",
+        "table_legs": "SteelBrushed",
+        "wall": "Custom02"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 14,
+      "difficulty": "medium",
+      "local_scene_index": 4,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-medium",
+      "source_split": "medium_scene",
+      "source_scene_id": 14,
+      "source_rollout_index": 14,
+      "texture_map": {
+        "floor": "Custom04",
+        "pp_table1": "Custom04",
+        "pp_table2": "WoodBlue",
+        "table_legs": "Metal",
+        "wall": "WoodBlue"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 15,
+      "difficulty": "medium",
+      "local_scene_index": 5,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-medium",
+      "source_split": "medium_scene",
+      "source_scene_id": 15,
+      "source_rollout_index": 15,
+      "texture_map": {
+        "floor": "Custom02",
+        "pp_table1": "Custom02",
+        "pp_table2": "WoodRed",
+        "table_legs": "Brass",
+        "wall": "FeltGray"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 16,
+      "difficulty": "medium",
+      "local_scene_index": 6,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-medium",
+      "source_split": "medium_scene",
+      "source_scene_id": 16,
+      "source_rollout_index": 16,
+      "texture_map": {
+        "floor": "Custom05",
+        "pp_table1": "WoodBlue",
+        "pp_table2": "Custom02",
+        "table_legs": "SteelBrushed",
+        "wall": "WoodgrainGray"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 17,
+      "difficulty": "medium",
+      "local_scene_index": 7,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-medium",
+      "source_split": "medium_scene",
+      "source_scene_id": 17,
+      "source_rollout_index": 17,
+      "texture_map": {
+        "floor": "WoodGreen",
+        "pp_table1": "WoodGreen",
+        "pp_table2": "Custom01",
+        "table_legs": "SteelBrushed",
+        "wall": "WoodRed"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 18,
+      "difficulty": "medium",
+      "local_scene_index": 8,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-medium",
+      "source_split": "medium_scene",
+      "source_scene_id": 18,
+      "source_rollout_index": 18,
+      "texture_map": {
+        "floor": "FeltGray",
+        "pp_table1": "WoodGreen",
+        "pp_table2": "Custom05",
+        "table_legs": "SteelScratched",
+        "wall": "WoodgrainGray"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 19,
+      "difficulty": "medium",
+      "local_scene_index": 9,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-medium",
+      "source_split": "medium_scene",
+      "source_scene_id": 19,
+      "source_rollout_index": 19,
+      "texture_map": {
+        "floor": "Dirt",
+        "pp_table1": "WoodBlue",
+        "pp_table2": "WoodGreen",
+        "table_legs": "SteelScratched",
+        "wall": "Dirt"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 20,
+      "difficulty": "hard",
+      "local_scene_index": 0,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-hard",
+      "source_split": "hard_scene",
+      "source_scene_id": 20,
+      "source_rollout_index": 20,
+      "texture_map": {
+        "floor": "Custom15",
+        "pp_table1": "Custom31",
+        "pp_table2": "Custom16",
+        "table_legs": "Brass",
+        "wall": "Custom22"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 21,
+      "difficulty": "hard",
+      "local_scene_index": 1,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-hard",
+      "source_split": "hard_scene",
+      "source_scene_id": 21,
+      "source_rollout_index": 21,
+      "texture_map": {
+        "floor": "Custom36",
+        "pp_table1": "Custom27",
+        "pp_table2": "Custom29",
+        "table_legs": "Brass",
+        "wall": "Custom24"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 22,
+      "difficulty": "hard",
+      "local_scene_index": 2,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-hard",
+      "source_split": "hard_scene",
+      "source_scene_id": 22,
+      "source_rollout_index": 22,
+      "texture_map": {
+        "floor": "Custom26",
+        "pp_table1": "Custom21",
+        "pp_table2": "Custom29",
+        "table_legs": "Metal",
+        "wall": "Custom12"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 23,
+      "difficulty": "hard",
+      "local_scene_index": 3,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-hard",
+      "source_split": "hard_scene",
+      "source_scene_id": 23,
+      "source_rollout_index": 23,
+      "texture_map": {
+        "floor": "Custom32",
+        "pp_table1": "Custom37",
+        "pp_table2": "Custom20",
+        "table_legs": "SteelScratched",
+        "wall": "Custom35"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 24,
+      "difficulty": "hard",
+      "local_scene_index": 4,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-hard",
+      "source_split": "hard_scene",
+      "source_scene_id": 24,
+      "source_rollout_index": 24,
+      "texture_map": {
+        "floor": "Custom11",
+        "pp_table1": "Custom22",
+        "pp_table2": "Custom25",
+        "table_legs": "Metal",
+        "wall": "Custom18"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 25,
+      "difficulty": "hard",
+      "local_scene_index": 5,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-hard",
+      "source_split": "hard_scene",
+      "source_scene_id": 25,
+      "source_rollout_index": 25,
+      "texture_map": {
+        "floor": "Custom23",
+        "pp_table1": "Custom25",
+        "pp_table2": "Custom19",
+        "table_legs": "Brass",
+        "wall": "Custom15"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 26,
+      "difficulty": "hard",
+      "local_scene_index": 6,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-hard",
+      "source_split": "hard_scene",
+      "source_scene_id": 26,
+      "source_rollout_index": 26,
+      "texture_map": {
+        "floor": "Custom18",
+        "pp_table1": "Custom31",
+        "pp_table2": "Custom24",
+        "table_legs": "Brass",
+        "wall": "Custom25"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 27,
+      "difficulty": "hard",
+      "local_scene_index": 7,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-hard",
+      "source_split": "hard_scene",
+      "source_scene_id": 27,
+      "source_rollout_index": 27,
+      "texture_map": {
+        "floor": "Custom12",
+        "pp_table1": "Custom24",
+        "pp_table2": "Custom32",
+        "table_legs": "SteelBrushed",
+        "wall": "Custom17"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 28,
+      "difficulty": "hard",
+      "local_scene_index": 8,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-hard",
+      "source_split": "hard_scene",
+      "source_scene_id": 28,
+      "source_rollout_index": 28,
+      "texture_map": {
+        "floor": "Custom33",
+        "pp_table1": "Custom11",
+        "pp_table2": "Custom15",
+        "table_legs": "SteelScratched",
+        "wall": "Custom29"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    },
+    {
+      "scene_id": 29,
+      "difficulty": "hard",
+      "local_scene_index": 9,
+      "eval_seed": 42,
+      "source_visual_mode": "eval-hard",
+      "source_split": "hard_scene",
+      "source_scene_id": 29,
+      "source_rollout_index": 29,
+      "texture_map": {
+        "floor": "Custom36",
+        "pp_table1": "Custom17",
+        "pp_table2": "Custom26",
+        "table_legs": "Metal",
+        "wall": "Custom38"
+      },
+      "material_map": null,
+      "skybox_config": null,
+      "light_config": null
+    }
+  ]
+}

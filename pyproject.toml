@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "star-rl"
+version = "0.1.0"
+description = "STAR visual adaptation for reinforcement learning and Diffusion Policy"
+readme = "README.md"
+requires-python = ">=3.8,<3.11"
+dependencies = ["PyYAML>=6,<7"]
+
+[project.scripts]
+star-train = "star.training.rl:main"
+star-eval = "star.evaluation.rl:main"
+star-train-diffusion = "star.training.diffusion:main"
+star-eval-diffusion = "star.evaluation.diffusion:main"
+
+[tool.setuptools.packages.find]
+include = ["star*", "diffusion_policy*"]
+exclude = ["vendor*", "tests*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,2 @@
+recursive-include dmc2gym *
+global-exclude *.pyc

@@ -1,0 +1,1178 @@
+{
+  "date": "2026-10-11",
+  "python": "3.8.20",
+  "pytorch": "1.12.1+cu116",
+  "dependency_install": "New venv with system-site-packages from existing runtime; editable source installs; not a fresh dependency solve",
+  "module_origins": {
+    "star": "star/__init__.py",
+    "dm_control": "vendor/dm_control/dm_control/__init__.py",
+    "robosuite": "vendor/robosuite/robosuite/__init__.py",
+    "dmcvgb": "vendor/dmcvgb/dmcvgb/__init__.py",
+    "dmc2gym": "vendor/dmc2gym/dmc2gym/__init__.py",
+    "robosuitevgb": "vendor/robosuitevgb/robosuitevgb/__init__.py"
+  },
+  "unit_tests_passed": 7,
+  "checkpoint_regressions": [
+    {
+      "task": "walker_walk",
+      "training_seed": 300,
+      "augmentation": "random_rotate_shift",
+      "inference_inputs": 4,
+      "original_actions_bitwise_equal": true,
+      "original_three_updates_bitwise_equal": true,
+      "teacher_unchanged": true,
+      "student_changed": true,
+      "checkpoint_roundtrip": true,
+      "optimizer_resume_equal": true,
+      "batch_size": 2,
+      "losses": [
+        {
+          "G/recon_loss": 0.9293044805526733
+        },
+        {
+          "G/recon_loss": 0.6324175000190735
+        },
+        {
+          "G/recon_loss": 0.4300672709941864
+        }
+      ],
+      "inputs": "synthetic observations and fixed real Places image",
+      "full_training": false,
+      "original_source_sha256": "b2bb978fb91931504e9784b2c3b6749dc847dfce13d47f262f57178cdb1aa9da"
+    },
+    {
+      "task": "walker_walk",
+      "training_seed": 300,
+      "augmentation": "random",
+      "inference_inputs": 4,
+      "original_actions_bitwise_equal": true,
+      "original_three_updates_bitwise_equal": true,
+      "teacher_unchanged": true,
+      "student_changed": true,
+      "checkpoint_roundtrip": true,
+      "optimizer_resume_equal": true,
+      "batch_size": 2,
+      "losses": [
+        {
+          "G/recon_loss": 1.173593521118164
+        },
+        {
+          "G/recon_loss": 0.9390725493431091
+        },
+        {
+          "G/recon_loss": 0.7367385029792786
+        }
+      ],
+      "inputs": "synthetic observations and fixed real Places image",
+      "full_training": false,
+      "original_source_sha256": "b2bb978fb91931504e9784b2c3b6749dc847dfce13d47f262f57178cdb1aa9da"
+    },
+    {
+      "task": "cheetah_run",
+      "training_seed": 300,
+      "augmentation": "random_rotate_shift",
+      "inference_inputs": 4,
+      "original_actions_bitwise_equal": true,
+      "original_three_updates_bitwise_equal": true,
+      "teacher_unchanged": true,
+      "student_changed": true,
+      "checkpoint_roundtrip": true,
+      "optimizer_resume_equal": true,
+      "batch_size": 2,
+      "losses": [
+        {
+          "G/recon_loss": 1.2226622104644775
+        },
+        {
+          "G/recon_loss": 1.0116827487945557
+        },
+        {
+          "G/recon_loss": 1.140252947807312
+        }
+      ],
+      "inputs": "synthetic observations and fixed real Places image",
+      "full_training": false,
+      "original_source_sha256": "b2bb978fb91931504e9784b2c3b6749dc847dfce13d47f262f57178cdb1aa9da"
+    },
+    {
+      "task": "cheetah_run",
+      "training_seed": 400,
+      "augmentation": "random",
+      "inference_inputs": 4,
+      "original_actions_bitwise_equal": true,
+      "original_three_updates_bitwise_equal": true,
+      "teacher_unchanged": true,
+      "student_changed": true,
+      "checkpoint_roundtrip": true,
+      "optimizer_resume_equal": true,
+      "batch_size": 2,
+      "losses": [
+        {
+          "G/recon_loss": 1.9756196737289429
+        },
+        {
+          "G/recon_loss": 1.8648933172225952
+        },
+        {
+          "G/recon_loss": 1.4559636116027832
+        }
+      ],
+      "inputs": "synthetic observations and fixed real Places image",
+      "full_training": false,
+      "original_source_sha256": "b2bb978fb91931504e9784b2c3b6749dc847dfce13d47f262f57178cdb1aa9da"
+    },
+    {
+      "task": "finger_spin",
+      "training_seed": 300,
+      "augmentation": "random_rotate_shift",
+      "inference_inputs": 4,
+      "original_actions_bitwise_equal": true,
+      "original_three_updates_bitwise_equal": true,
+      "teacher_unchanged": true,
+      "student_changed": true,
+      "checkpoint_roundtrip": true,
+      "optimizer_resume_equal": true,
+      "batch_size": 2,
+      "losses": [
+        {
+          "G/recon_loss": 0.9365517497062683
+        },
+        {
+          "G/recon_loss": 0.7226235270500183
+        },
+        {
+          "G/recon_loss": 0.698498547077179
+        }
+      ],
+      "inputs": "synthetic observations and fixed real Places image",
+      "full_training": false,
+      "original_source_sha256": "b2bb978fb91931504e9784b2c3b6749dc847dfce13d47f262f57178cdb1aa9da"
+    },
+    {
+      "task": "finger_spin",
+      "training_seed": 300,
+      "augmentation": "random",
+      "inference_inputs": 4,
+      "original_actions_bitwise_equal": true,
+      "original_three_updates_bitwise_equal": true,
+      "teacher_unchanged": true,
+      "student_changed": true,
+      "checkpoint_roundtrip": true,
+      "optimizer_resume_equal": true,
+      "batch_size": 2,
+      "losses": [
+        {
+          "G/recon_loss": 1.391228437423706
+        },
+        {
+          "G/recon_loss": 0.9741969108581543
+        },
+        {
+          "G/recon_loss": 0.9446471929550171
+        }
+      ],
+      "inputs": "synthetic observations and fixed real Places image",
+      "full_training": false,
+      "original_source_sha256": "b2bb978fb91931504e9784b2c3b6749dc847dfce13d47f262f57178cdb1aa9da"
+    },
+    {
+      "task": "cartpole_swingup",
+      "training_seed": 300,
+      "augmentation": "random_rotate_shift",
+      "inference_inputs": 4,
+      "original_actions_bitwise_equal": true,
+      "original_three_updates_bitwise_equal": true,
+      "teacher_unchanged": true,
+      "student_changed": true,
+      "checkpoint_roundtrip": true,
+      "optimizer_resume_equal": true,
+      "batch_size": 2,
+      "losses": [
+        {
+          "G/recon_loss": 0.7279279828071594
+        },
+        {
+          "G/recon_loss": 0.5857231020927429
+        },
+        {
+          "G/recon_loss": 0.47728607058525085
+        }
+      ],
+      "inputs": "synthetic observations and fixed real Places image",
+      "full_training": false,
+      "original_source_sha256": "b2bb978fb91931504e9784b2c3b6749dc847dfce13d47f262f57178cdb1aa9da"
+    },
+    {
+      "task": "cartpole_swingup",
+      "training_seed": 300,
+      "augmentation": "random",
+      "inference_inputs": 4,
+      "original_actions_bitwise_equal": true,
+      "original_three_updates_bitwise_equal": true,
+      "teacher_unchanged": true,
+      "student_changed": true,
+      "checkpoint_roundtrip": true,
+      "optimizer_resume_equal": true,
+      "batch_size": 2,
+      "losses": [
+        {
+          "G/recon_loss": 0.6218827962875366
+        },
+        {
+          "G/recon_loss": 0.35642531514167786
+        },
+        {
+          "G/recon_loss": 0.32512012124061584
+        }
+      ],
+      "inputs": "synthetic observations and fixed real Places image",
+      "full_training": false,
+      "original_source_sha256": "b2bb978fb91931504e9784b2c3b6749dc847dfce13d47f262f57178cdb1aa9da"
+    },
+    {
+      "task": "Door",
+      "training_seed": 300,
+      "augmentation": "random",
+      "inference_inputs": 4,
+      "original_actions_bitwise_equal": true,
+      "original_three_updates_bitwise_equal": true,
+      "teacher_unchanged": true,
+      "student_changed": true,
+      "checkpoint_roundtrip": true,
+      "optimizer_resume_equal": true,
+      "batch_size": 2,
+      "losses": [
+        {
+          "G/recon_loss": 1.633347511291504
+        },
+        {
+          "G/recon_loss": 1.3172318935394287
+        },
+        {
+          "G/recon_loss": 1.0846223831176758
+        }
+      ],
+      "inputs": "synthetic observations and fixed real Places image",
+      "full_training": false,
+      "original_source_sha256": "b2bb978fb91931504e9784b2c3b6749dc847dfce13d47f262f57178cdb1aa9da"
+    },
+    {
+      "task": "Door",
+      "training_seed": 600,
+      "augmentation": "random",
+      "inference_inputs": 4,
+      "original_actions_bitwise_equal": true,
+      "original_three_updates_bitwise_equal": true,
+      "teacher_unchanged": true,
+      "student_changed": true,
+      "checkpoint_roundtrip": true,
+      "optimizer_resume_equal": true,
+      "batch_size": 2,
+      "losses": [
+        {
+          "G/recon_loss": 1.4463950395584106
+        },
+        {
+          "G/recon_loss": 1.2878799438476562
+        },
+        {
+          "G/recon_loss": 1.0217676162719727
+        }
+      ],
+      "inputs": "synthetic observations and fixed real Places image",
+      "full_training": false,
+      "original_source_sha256": "b2bb978fb91931504e9784b2c3b6749dc847dfce13d47f262f57178cdb1aa9da"
+    },
+    {
+      "task": "TwoArmPegInHole",
+      "training_seed": 300,
+      "augmentation": "random",
+      "inference_inputs": 4,
+      "original_actions_bitwise_equal": true,
+      "original_three_updates_bitwise_equal": true,
+      "teacher_unchanged": true,
+      "student_changed": true,
+      "checkpoint_roundtrip": true,
+      "optimizer_resume_equal": true,
+      "batch_size": 2,
+      "losses": [
+        {
+          "G/recon_loss": 0.7574599981307983
+        },
+        {
+          "G/recon_loss": 0.5433111786842346
+        },
+        {
+          "G/recon_loss": 0.3807413578033447
+        }
+      ],
+      "inputs": "synthetic observations and fixed real Places image",
+      "full_training": false,
+      "original_source_sha256": "b2bb978fb91931504e9784b2c3b6749dc847dfce13d47f262f57178cdb1aa9da"
+    },
+    {
+      "task": "TwoArmPegInHole",
+      "training_seed": 600,
+      "augmentation": "random",
+      "inference_inputs": 4,
+      "original_actions_bitwise_equal": true,
+      "original_three_updates_bitwise_equal": true,
+      "teacher_unchanged": true,
+      "student_changed": true,
+      "checkpoint_roundtrip": true,
+      "optimizer_resume_equal": true,
+      "batch_size": 2,
+      "losses": [
+        {
+          "G/recon_loss": 1.1214563846588135
+        },
+        {
+          "G/recon_loss": 0.9247927665710449
+        },
+        {
+          "G/recon_loss": 0.6131340861320496
+        }
+      ],
+      "inputs": "synthetic observations and fixed real Places image",
+      "full_training": false,
+      "original_source_sha256": "b2bb978fb91931504e9784b2c3b6749dc847dfce13d47f262f57178cdb1aa9da"
+    }
+  ],
+  "environment_episodes": [
+    {
+      "task": "walker_walk",
+      "mode": "rotate_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 987.9175557304457,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "4706fbe199989f1c9adb896ce9ff70463fff6ef3114970442d1370d562f42bb6"
+    },
+    {
+      "task": "walker_walk",
+      "mode": "rotate_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 984.2496552976509,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "4706fbe199989f1c9adb896ce9ff70463fff6ef3114970442d1370d562f42bb6"
+    },
+    {
+      "task": "walker_walk",
+      "mode": "shift_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 976.8333941458601,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "4706fbe199989f1c9adb896ce9ff70463fff6ef3114970442d1370d562f42bb6"
+    },
+    {
+      "task": "walker_walk",
+      "mode": "shift_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 980.7866504071203,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "4706fbe199989f1c9adb896ce9ff70463fff6ef3114970442d1370d562f42bb6"
+    },
+    {
+      "task": "walker_walk",
+      "mode": "video_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 987.9598679191814,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "6f39b33f3f0e6cd2e7583dd3d046f1a280032d667d463d0e41df640b6f9f23f0"
+    },
+    {
+      "task": "walker_walk",
+      "mode": "video_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 963.3593815428654,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "6f39b33f3f0e6cd2e7583dd3d046f1a280032d667d463d0e41df640b6f9f23f0"
+    },
+    {
+      "task": "walker_walk",
+      "mode": "color_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 986.9837825491431,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "6f39b33f3f0e6cd2e7583dd3d046f1a280032d667d463d0e41df640b6f9f23f0"
+    },
+    {
+      "task": "walker_walk",
+      "mode": "color_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 978.5812987420812,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "6f39b33f3f0e6cd2e7583dd3d046f1a280032d667d463d0e41df640b6f9f23f0"
+    },
+    {
+      "task": "cheetah_run",
+      "mode": "rotate_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 553.7740129679505,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "5465f9bb9b7e67984f23734d4aea6b5782f049dd57482d7f71f95fc83acba711"
+    },
+    {
+      "task": "cheetah_run",
+      "mode": "rotate_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 619.9934410298315,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "5465f9bb9b7e67984f23734d4aea6b5782f049dd57482d7f71f95fc83acba711"
+    },
+    {
+      "task": "cheetah_run",
+      "mode": "shift_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 564.7061389965652,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "5465f9bb9b7e67984f23734d4aea6b5782f049dd57482d7f71f95fc83acba711"
+    },
+    {
+      "task": "cheetah_run",
+      "mode": "shift_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 538.6769231861947,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "5465f9bb9b7e67984f23734d4aea6b5782f049dd57482d7f71f95fc83acba711"
+    },
+    {
+      "task": "cheetah_run",
+      "mode": "video_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 557.4591409500019,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "34ec1ce688c365a96f7db60f27071a10f47779ce4adb3a72ee7fee3a5e3038de"
+    },
+    {
+      "task": "cheetah_run",
+      "mode": "video_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 226.8522688063098,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "34ec1ce688c365a96f7db60f27071a10f47779ce4adb3a72ee7fee3a5e3038de"
+    },
+    {
+      "task": "cheetah_run",
+      "mode": "color_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 601.6519383905913,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "34ec1ce688c365a96f7db60f27071a10f47779ce4adb3a72ee7fee3a5e3038de"
+    },
+    {
+      "task": "cheetah_run",
+      "mode": "color_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 4,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 222.31282653149836,
+          "steps": 250,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "34ec1ce688c365a96f7db60f27071a10f47779ce4adb3a72ee7fee3a5e3038de"
+    },
+    {
+      "task": "finger_spin",
+      "mode": "rotate_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 2,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 937.0,
+          "steps": 500,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "eddaf54d16b7760df704be6513340c2c3af62a732b11d945062ef38391cbcc3d"
+    },
+    {
+      "task": "finger_spin",
+      "mode": "rotate_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 2,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 984.0,
+          "steps": 500,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "eddaf54d16b7760df704be6513340c2c3af62a732b11d945062ef38391cbcc3d"
+    },
+    {
+      "task": "finger_spin",
+      "mode": "shift_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 2,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 983.0,
+          "steps": 500,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "eddaf54d16b7760df704be6513340c2c3af62a732b11d945062ef38391cbcc3d"
+    },
+    {
+      "task": "finger_spin",
+      "mode": "shift_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 2,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 858.0,
+          "steps": 500,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "eddaf54d16b7760df704be6513340c2c3af62a732b11d945062ef38391cbcc3d"
+    },
+    {
+      "task": "finger_spin",
+      "mode": "video_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 2,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 984.0,
+          "steps": 500,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "ddccf156e81bd43fa6ea593241e6c010e3014753ac3ba727ddd13b027052355e"
+    },
+    {
+      "task": "finger_spin",
+      "mode": "video_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 2,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 932.0,
+          "steps": 500,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "ddccf156e81bd43fa6ea593241e6c010e3014753ac3ba727ddd13b027052355e"
+    },
+    {
+      "task": "finger_spin",
+      "mode": "color_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 2,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 982.0,
+          "steps": 500,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "ddccf156e81bd43fa6ea593241e6c010e3014753ac3ba727ddd13b027052355e"
+    },
+    {
+      "task": "finger_spin",
+      "mode": "color_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 2,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 984.0,
+          "steps": 500,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "ddccf156e81bd43fa6ea593241e6c010e3014753ac3ba727ddd13b027052355e"
+    },
+    {
+      "task": "cartpole_swingup",
+      "mode": "rotate_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 8,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 839.6562674490757,
+          "steps": 125,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "932ab4b6fca176dbb3fbe748413281d8cc83a08d8e2ee4978aa0eb833dfcdc31"
+    },
+    {
+      "task": "cartpole_swingup",
+      "mode": "rotate_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 8,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 870.0884017078067,
+          "steps": 125,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "932ab4b6fca176dbb3fbe748413281d8cc83a08d8e2ee4978aa0eb833dfcdc31"
+    },
+    {
+      "task": "cartpole_swingup",
+      "mode": "shift_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 8,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 855.4369240803247,
+          "steps": 125,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "932ab4b6fca176dbb3fbe748413281d8cc83a08d8e2ee4978aa0eb833dfcdc31"
+    },
+    {
+      "task": "cartpole_swingup",
+      "mode": "shift_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 8,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 648.6149643202195,
+          "steps": 125,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "932ab4b6fca176dbb3fbe748413281d8cc83a08d8e2ee4978aa0eb833dfcdc31"
+    },
+    {
+      "task": "cartpole_swingup",
+      "mode": "video_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 8,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 879.2282791477456,
+          "steps": 125,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "1edcf2e90091d0e0ce1b19ab2031901e050561d9d98d4c193d1b3b28dde9120e"
+    },
+    {
+      "task": "cartpole_swingup",
+      "mode": "video_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 8,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 860.9951613152297,
+          "steps": 125,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "1edcf2e90091d0e0ce1b19ab2031901e050561d9d98d4c193d1b3b28dde9120e"
+    },
+    {
+      "task": "cartpole_swingup",
+      "mode": "color_easy",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 8,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 879.751557450432,
+          "steps": 125,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "1edcf2e90091d0e0ce1b19ab2031901e050561d9d98d4c193d1b3b28dde9120e"
+    },
+    {
+      "task": "cartpole_swingup",
+      "mode": "color_hard",
+      "seed": 1,
+      "scene_id": null,
+      "action_repeat": 8,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": null,
+          "return": 875.3049671302699,
+          "steps": 125,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "1edcf2e90091d0e0ce1b19ab2031901e050561d9d98d4c193d1b3b28dde9120e"
+    },
+    {
+      "task": "Door",
+      "mode": "easy",
+      "seed": 1,
+      "scene_id": 0,
+      "action_repeat": 1,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": 0,
+          "return": 479.98314667681905,
+          "steps": 500,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "a71faaeae3b30d4e6e923851a6abeaaf966ea36118ad6ba79fe9e2b2d5fcbf59"
+    },
+    {
+      "task": "Door",
+      "mode": "medium",
+      "seed": 1,
+      "scene_id": 0,
+      "action_repeat": 1,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": 0,
+          "return": 482.8717314127599,
+          "steps": 500,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "4e1d7b422287c48590b591cbdcea0611b7a2d54a2809f6ce41dd121ed812c401"
+    },
+    {
+      "task": "Door",
+      "mode": "hard",
+      "seed": 1,
+      "scene_id": 0,
+      "action_repeat": 1,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": 0,
+          "return": 479.3010121244579,
+          "steps": 500,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "a71faaeae3b30d4e6e923851a6abeaaf966ea36118ad6ba79fe9e2b2d5fcbf59"
+    },
+    {
+      "task": "TwoArmPegInHole",
+      "mode": "easy",
+      "seed": 1,
+      "scene_id": 0,
+      "action_repeat": 1,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": 0,
+          "return": 479.7061566498381,
+          "steps": 500,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "9fe3817b0dc920a68b77df9abea95aaa7237f28f358268564090a65d61316fd5"
+    },
+    {
+      "task": "TwoArmPegInHole",
+      "mode": "medium",
+      "seed": 1,
+      "scene_id": 6,
+      "action_repeat": 1,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": 6,
+          "return": 273.9413532218211,
+          "steps": 500,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "5d10865bf5f7524b58b52055fdf14f63448e27bfacfe7541a58dbba4513d5fe1"
+    },
+    {
+      "task": "TwoArmPegInHole",
+      "mode": "hard",
+      "seed": 1,
+      "scene_id": 0,
+      "action_repeat": 1,
+      "episodes": [
+        {
+          "episode": 0,
+          "seed": 1,
+          "scene_id": 0,
+          "return": 475.25412364694006,
+          "steps": 500,
+          "complete_episode": true
+        }
+      ],
+      "checkpoint_sha256": "9fe3817b0dc920a68b77df9abea95aaa7237f28f358268564090a65d61316fd5"
+    }
+  ],
+  "native_entrypoints": {
+    "stage1_environment_steps": 260,
+    "stage1_critic_optimizer_steps": 10.0,
+    "stage2_optimizer_steps": 2,
+    "stage2_adapter_optimizer_steps": 2.0,
+    "snapshots_load": true
+  },
+  "real_replay_smoke": {
+    "stage1": {
+      "fresh_construction": true,
+      "real_replay_updates": 2,
+      "original_controlled_updates_bitwise_equal": true
+    },
+    "random": {
+      "fresh_construction": true,
+      "real_replay_updates": 2,
+      "loss": [
+        {
+          "G/recon_loss": 1.0368229150772095
+        },
+        {
+          "G/recon_loss": 1.0320277214050293
+        }
+      ],
+      "teacher_unchanged": true,
+      "save_reload": true
+    },
+    "random_rotate_shift": {
+      "fresh_construction": true,
+      "real_replay_updates": 2,
+      "loss": [
+        {
+          "G/recon_loss": 1.0373694896697998
+        },
+        {
+          "G/recon_loss": 1.0314894914627075
+        }
+      ],
+      "teacher_unchanged": true,
+      "save_reload": true
+    },
+    "full_training": false,
+    "batch_size": 4,
+    "inputs": "16 real replay rows; actual Places ImageFolder pipeline for random overlay"
+  },
+  "dmc_multiepisode": [
+    {
+      "episode": 0,
+      "seed": 1,
+      "scene_id": null,
+      "return": 595.8493359479957,
+      "steps": 250,
+      "complete_episode": true
+    },
+    {
+      "episode": 1,
+      "seed": 2,
+      "scene_id": null,
+      "return": 602.5104529410696,
+      "steps": 250,
+      "complete_episode": true
+    }
+  ],
+  "full_retraining": false,
+  "paper_scores_reproduced": false,
+  "preexisting_dependency_issue": "pip check reports unrelated moviepy 1.0.3 / decorator 5.1.1 mismatch in inherited runtime; neither is part of the STAR core recipe",
+  "clean_environment": {
+    "python": "3.8.20",
+    "system_site_packages": false,
+    "requirements_install": true,
+    "pip_check": "No broken requirements found.",
+    "unit_tests_passed": 7,
+    "regenerated_mujoco_bindings": true,
+    "module_origins": {
+      "star": "star/__init__.py",
+      "dm_control": "vendor/dm_control/dm_control/__init__.py",
+      "robosuite": "vendor/robosuite/robosuite/__init__.py",
+      "dmcvgb": "vendor/dmcvgb/dmcvgb/__init__.py",
+      "dmc2gym": "vendor/dmc2gym/dmc2gym/__init__.py",
+      "robosuitevgb": "vendor/robosuitevgb/robosuitevgb/__init__.py"
+    },
+    "full_evaluation_episodes": [
+      {
+        "task": "cheetah_run",
+        "mode": "video_hard",
+        "episodes": [
+          {
+            "episode": 0,
+            "seed": 1,
+            "scene_id": null,
+            "return": 226.8522688063098,
+            "steps": 250,
+            "complete_episode": true
+          }
+        ]
+      },
+      {
+        "task": "TwoArmPegInHole",
+        "mode": "medium",
+        "episodes": [
+          {
+            "episode": 0,
+            "seed": 1,
+            "scene_id": 6,
+            "return": 273.9413532218211,
+            "steps": 500,
+            "complete_episode": true
+          }
+        ]
+      }
+    ],
+    "real_replay_smoke": {
+      "stage1": {
+        "fresh_construction": true,
+        "real_replay_updates": 2,
+        "original_controlled_updates_bitwise_equal": true
+      },
+      "random": {
+        "fresh_construction": true,
+        "real_replay_updates": 2,
+        "loss": [
+          {
+            "G/recon_loss": 1.0368229150772095
+          },
+          {
+            "G/recon_loss": 1.0320277214050293
+          }
+        ],
+        "teacher_unchanged": true,
+        "save_reload": true
+      },
+      "random_rotate_shift": {
+        "fresh_construction": true,
+        "real_replay_updates": 2,
+        "loss": [
+          {
+            "G/recon_loss": 1.0373694896697998
+          },
+          {
+            "G/recon_loss": 1.0314894914627075
+          }
+        ],
+        "teacher_unchanged": true,
+        "save_reload": true
+      },
+      "full_training": false,
+      "batch_size": 4,
+      "inputs": "16 real replay rows; actual Places ImageFolder pipeline for random overlay"
+    },
+    "scope": "Fresh Python packages on the existing Linux/NVIDIA host; not a fresh OS or independent machine"
+  }
+}

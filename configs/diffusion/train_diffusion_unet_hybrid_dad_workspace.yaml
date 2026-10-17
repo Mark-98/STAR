@@ -1,0 +1,215 @@
+defaults:
+  - _self_
+  - task: square_image_abs
+
+name: train_diffusion_unet_hybrid_dad
+_target_: diffusion_policy.workspace.train_diffusion_unet_hybrid_workspace.TrainDiffusionUnetHybridWorkspace
+
+task_name: ${task.name}
+shape_meta: ${task.shape_meta}
+exp_name: "default"
+pretrained_checkpoint: null
+
+horizon: 16
+n_obs_steps: 2
+n_action_steps: 8
+n_latency_steps: 0
+dataset_obs_steps: ${n_obs_steps}
+past_action_visible: False
+keypoint_visible_rate: 1.0
+obs_as_global_cond: True
+
+policy:
+  _target_: diffusion_policy.policy.diffusion_unet_hybrid_image_dad_policy.DiffusionUnetHybridImageDADPolicy
+
+  shape_meta: ${shape_meta}
+
+  noise_scheduler:
+    _target_: diffusers.schedulers.scheduling_ddpm.DDPMScheduler
+    num_train_timesteps: 100
+    beta_start: 0.0001
+    beta_end: 0.02
+    beta_schedule: squaredcos_cap_v2
+    variance_type: fixed_small
+    clip_sample: True
+    prediction_type: epsilon
+
+  horizon: ${horizon}
+  n_action_steps: ${eval:'${n_action_steps}+${n_latency_steps}'}
+  n_obs_steps: ${n_obs_steps}
+  num_inference_steps: 100
+  obs_as_global_cond: ${obs_as_global_cond}
+  crop_shape: [76, 76]
+  diffusion_step_embed_dim: 128
+  down_dims: [512, 1024, 2048]
+  kernel_size: 5
+  n_groups: 8
+  cond_predict_scale: True
+  obs_encoder_group_norm: True
+  eval_fixed_crop: True
+
+  pretrained_student_checkpoint_path: ${pretrained_checkpoint}
+  teacher_checkpoint_path: ${pretrained_checkpoint}
+  load_full_student_policy: True
+  latent_loss_weight: 1.0
+  diffusion_loss_weight: 0.0
+  diffusion_loss_input_mode: clean
+  pair_loss_type: mse
+  pair_huber_delta: 1.0
+  normalize_latent_loss_features: False
+  latent_loss_feature_norm_eps: 1.0e-6
+  lambda_pair: 1.0
+  lambda_mean: 0.0
+  lambda_coral: 0.0
+  coral:
+    eps: 1.0e-5
+    unbiased: True
+  projector_hidden_dim: 256
+  projector_num_layers: 3
+  projector_residual: False
+  projector_residual_scale: 1.0
+  projector_zero_init_output: False
+  projector_activation: mish
+  projector_input_layer_norm: True
+  projector_layer_norm_every_layer: False
+  projector_output_layer_norm: False
+  projector_architecture: legacy
+  rgb_adapter_mode: per_view
+  joint_projector_hidden_dim: null
+  joint_projector_num_layers: null
+  joint_projector_residual: null
+  joint_projector_residual_scale: null
+  joint_projector_zero_init_output: null
+  joint_projector_activation: null
+  joint_projector_input_layer_norm: null
+  joint_projector_layer_norm_every_layer: null
+  joint_projector_output_layer_norm: null
+  joint_projector_architecture: null
+  use_pre_spatial_adapter: False
+  pre_spatial_adapter_type: conv
+  pre_spatial_adapter_hidden_channels: null
+  pre_spatial_adapter_kernel_size: 1
+  pre_spatial_adapter_mlp_hidden_dim: null
+  pre_spatial_adapter_mlp_num_layers: 2
+  pre_spatial_adapter_mlp_layer_norm: True
+  pre_spatial_adapter_residual: True
+  pre_spatial_adapter_residual_scale: 0.03
+  pre_spatial_adapter_zero_init_output: True
+  pre_spatial_adapter_activation: null
+  pre_spatial_adapter_norm: group
+  use_fusion_projector: False
+  fusion_projector_hidden_dim: 512
+  fusion_projector_num_layers: 2
+  use_residual_fusion_projector: False
+  local_latent_loss_weight: 1.0
+  global_latent_loss_weight: 1.0
+  robust_latent_loss_weight: 1.0
+  clean_latent_loss_weight: 0.0
+  robust_latent_input_mode: shift_overlay
+  input_grad_regularization_weight: 0.0
+  input_grad_regularization_loss_weighted: False
+  input_grad_regularization_auto_calibrate: False
+  input_grad_regularization_target_ratio: 0.05
+  input_grad_regularization_calibration_batches: 5
+  input_grad_regularization_lambda_scale: 1.0
+  input_grad_regularization_log_batches: 5
+  robust_shift_pad: 0
+  overlay_mode: places365
+  overlay_root: null
+  overlay_dataset: places365_standard
+  overlay_num_workers: 4
+  overlay_use_val_split: False
+  overlay_prob: 1.0
+  overlay_alpha: 0.5
+  min_overlay_alpha: 0.0
+  max_overlay_alpha: 1.0
+  overlay_shift: 6
+  use_random_ratio_overlay: True
+  share_overlay_across_views: True
+  deterministic_latent_crop: False
+  freeze_teacher: True
+  freeze_student_encoder: False
+  freeze_diffusion_model: True
+
+ema:
+  _target_: diffusion_policy.model.diffusion.ema_model.EMAModel
+  update_after_step: 0
+  inv_gamma: 1.0
+  power: 0.75
+  min_value: 0.0
+  max_value: 0.9999
+
+dataloader:
+  batch_size: 64
+  num_workers: 4
+  shuffle: True
+  pin_memory: True
+  persistent_workers: False
+
+val_dataloader:
+  batch_size: 64
+  num_workers: 4
+  shuffle: False
+  pin_memory: True
+  persistent_workers: False
+
+optimizer:
+  _target_: torch.optim.AdamW
+  lr: 1e-4
+  betas: [0.95, 0.999]
+  eps: 1.0e-8
+  weight_decay: 1.0e-6
+
+stage2_optimizer:
+  enabled: False
+  student_encoder_lr: null
+  adapter_lr: null
+
+training:
+  device: "cuda"
+  seed: 42
+  debug: False
+  resume: True
+  lr_scheduler: cosine
+  lr_warmup_steps: 0
+  num_epochs: 20
+  gradient_accumulate_every: 1
+  use_ema: False
+  rollout_every:  20
+  checkpoint_every: 20
+  val_every: 20
+  sample_every: 20
+  max_train_steps: null
+  max_val_steps: null
+  tqdm_interval_sec: 1.0
+
+logging:
+  project: star
+  resume: True
+  mode: offline
+  name: ${now:%Y.%m.%d-%H.%M.%S}_${name}_${task_name}
+  tags: ["${name}", "${task_name}", "${exp_name}"]
+  id: null
+  group: null
+
+checkpoint:
+  topk:
+    monitor_key: test_mean_score
+    mode: max
+    k: 0
+    format_str: 'epoch={epoch:04d}-test_mean_score={test_mean_score:.3f}.ckpt'
+  save_last_ckpt: True
+  save_last_snapshot: False
+
+multi_run:
+  run_dir: outputs/${now:%Y.%m.%d}/${now:%H.%M.%S}_${name}_${task_name}
+  wandb_name_base: ${now:%Y.%m.%d-%H.%M.%S}_${name}_${task_name}
+
+hydra:
+  job:
+    override_dirname: ${name}
+  run:
+    dir: outputs/${now:%Y.%m.%d}/${now:%H.%M.%S}_${name}_${task_name}
+  sweep:
+    dir: outputs/${now:%Y.%m.%d}/${now:%H.%M.%S}_${name}_${task_name}
+    subdir: ${hydra.job.num}

@@ -1,0 +1,2 @@
+recursive-include dmcvgb *
+global-exclude *.pyc

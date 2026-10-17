@@ -1,0 +1,2 @@
+recursive-include robosuite *
+global-exclude *.pyc

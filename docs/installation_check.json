@@ -1,0 +1,266 @@
+{
+  "date": "2026-10-11",
+  "source_commit": "dd07bfdf199c72ba5562db804419f8bbab029915",
+  "python": "3.8.20",
+  "pytorch": "1.12.1+cu116",
+  "cuda_available": true,
+  "isolated_venv": true,
+  "system_site_packages": false,
+  "pip_check": "No broken requirements found.",
+  "unit_tests_passed": 10,
+  "module_origins": {
+    "star": "star/__init__.py",
+    "star.datasets.replay": "star/datasets/replay.py",
+    "dm_control": "vendor/dm_control/dm_control/__init__.py",
+    "dm_control.mujoco.wrapper.core": "vendor/dm_control/dm_control/mujoco/wrapper/core.py",
+    "robosuite": "vendor/robosuite/robosuite/__init__.py",
+    "dmc2gym": "vendor/dmc2gym/dmc2gym/__init__.py",
+    "dmcvgb": "vendor/dmcvgb/dmcvgb/__init__.py",
+    "robosuitevgb": "vendor/robosuitevgb/robosuitevgb/__init__.py",
+    "robosuitevgb.secant.envs.robosuite.core": "vendor/robosuitevgb/robosuitevgb/secant/envs/robosuite/core.py"
+  },
+  "mujoco_bindings_regenerated": true,
+  "upstream_asset_commit": "90d8b8c40acb63af6f938c1f4cc79a0cfee7d7ec",
+  "public_asset_hash_check": {
+    "verified_files": 168,
+    "errors": []
+  },
+  "pipelines": [
+    {
+      "task": "cheetah_run",
+      "seed": 1,
+      "augmentation": "random_rotate_shift",
+      "fresh_teacher": true,
+      "fresh_replay": true,
+      "environment_steps": 1260,
+      "teacher_optimizer_steps": 10.0,
+      "student_optimizer_steps": 2.0,
+      "checkpoints_reload": true,
+      "full_evaluation_episode": true,
+      "paper_score_reproduction": false,
+      "evaluation": {
+        "mode": "rotate_easy",
+        "episodes": [
+          {
+            "episode": 0,
+            "seed": 1,
+            "scene_id": null,
+            "return": 0.3329417029628683,
+            "steps": 250,
+            "complete_episode": true
+          }
+        ]
+      }
+    },
+    {
+      "task": "cheetah_run",
+      "seed": 1,
+      "augmentation": "random",
+      "fresh_teacher": true,
+      "fresh_replay": true,
+      "environment_steps": 1260,
+      "teacher_optimizer_steps": 10.0,
+      "student_optimizer_steps": 2.0,
+      "checkpoints_reload": true,
+      "full_evaluation_episode": true,
+      "paper_score_reproduction": false,
+      "evaluation": {
+        "mode": "video_hard",
+        "episodes": [
+          {
+            "episode": 0,
+            "seed": 1,
+            "scene_id": null,
+            "return": 0.3395531477030377,
+            "steps": 250,
+            "complete_episode": true
+          }
+        ]
+      }
+    },
+    {
+      "task": "Door",
+      "seed": 1,
+      "augmentation": "random",
+      "fresh_teacher": true,
+      "fresh_replay": true,
+      "environment_steps": 1510,
+      "teacher_optimizer_steps": 10.0,
+      "student_optimizer_steps": 2.0,
+      "checkpoints_reload": true,
+      "full_evaluation_episode": true,
+      "paper_score_reproduction": false,
+      "evaluation": {
+        "mode": "medium",
+        "episodes": [
+          {
+            "episode": 0,
+            "seed": 1,
+            "scene_id": 0,
+            "return": 0.7223642667749959,
+            "steps": 500,
+            "complete_episode": true
+          }
+        ]
+      },
+      "hard_evaluation": {
+        "mode": "hard",
+        "episodes": [
+          {
+            "episode": 0,
+            "seed": 1,
+            "scene_id": 0,
+            "return": 0.7211954551429874,
+            "steps": 500,
+            "complete_episode": true
+          }
+        ]
+      }
+    },
+    {
+      "task": "TwoArmPegInHole",
+      "seed": 1,
+      "augmentation": "random",
+      "fresh_teacher": true,
+      "fresh_replay": true,
+      "environment_steps": 1510,
+      "teacher_optimizer_steps": 10.0,
+      "student_optimizer_steps": 2.0,
+      "checkpoints_reload": true,
+      "full_evaluation_episode": true,
+      "paper_score_reproduction": false,
+      "evaluation": {
+        "mode": "medium",
+        "episodes": [
+          {
+            "episode": 0,
+            "seed": 1,
+            "scene_id": 0,
+            "return": 200.42199833866852,
+            "steps": 500,
+            "complete_episode": true
+          }
+        ]
+      },
+      "hard_evaluation": {
+        "mode": "hard",
+        "episodes": [
+          {
+            "episode": 0,
+            "seed": 1,
+            "scene_id": 0,
+            "return": 189.4973576496825,
+            "steps": 500,
+            "complete_episode": true
+          }
+        ]
+      }
+    }
+  ],
+  "private_checkpoints_used": false,
+  "preexisting_replay_used": false,
+  "places_fixture": {
+    "source": "https://data.csail.mit.edu/places/places365/places365standard_easyformat.tar",
+    "downloaded_bytes": 67108864,
+    "full_dataset": false,
+    "images": [
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00032701.jpg",
+        "bytes": 20111,
+        "sha256": "3e31485c08996258d4ab9ecf5c1774c603afd7aeb1e88623e9dcebb3b22f602a"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00010661.jpg",
+        "bytes": 10822,
+        "sha256": "fa73dd9a32e277d112bdeea524b1131c37e96bfcfac27ac531a38399fbf4b511"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00004872.jpg",
+        "bytes": 15655,
+        "sha256": "ee248682ddd4a08d6d01a18bccef7aa26058b00890cd5bde3fd3474b4693a75e"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00014942.jpg",
+        "bytes": 14523,
+        "sha256": "c0f686a85b323d94df2d0aa4a9e5d3a4ef2447aa1a65d35d1b6c7fafe0a71adf"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00002425.jpg",
+        "bytes": 6725,
+        "sha256": "d28745d58bce97d3cafba16f18ff1a279cd5bcda3294d1a69f113dc8966e9d6e"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00015796.jpg",
+        "bytes": 23162,
+        "sha256": "2d05a1bd35dc5efdfa6102c3e70544270a4ddb95903eead3835030cfbbd838e1"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00008534.jpg",
+        "bytes": 14184,
+        "sha256": "e7f55383cb2da4ca876bebbca5cb22418dc738a4b60315e09c66220b6cc2f67d"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00024393.jpg",
+        "bytes": 7695,
+        "sha256": "0404b2ee9e6efbc1e245fa13f243baa0995bfb9b76534926c8c4c0949aff681a"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00020495.jpg",
+        "bytes": 14895,
+        "sha256": "018da773c4e5dd15cad26b3fe188d8643b07a2ebf39e4e37538e17fd46d0014e"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00009061.jpg",
+        "bytes": 18486,
+        "sha256": "9b3a5d0f1405e9a261328f76abe4f1006134d636c021db13d7b6082954546687"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00029120.jpg",
+        "bytes": 20380,
+        "sha256": "ec4ae6a8703f49a6899a65bbad8df27c78daceeed6635ce65603871a61fc3af5"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00002748.jpg",
+        "bytes": 12605,
+        "sha256": "2429322f709ce08f6eb9be9a7063666a82ac2298d88c1613e0053545427fab8e"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00002548.jpg",
+        "bytes": 16168,
+        "sha256": "0c8a51c7c770b6ec8c57b313924b1dfb62ea434b05b97730a131688c2507e4e5"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00001829.jpg",
+        "bytes": 15778,
+        "sha256": "326030028ccfc836608d578797459c3e1df1df724ba5fb360bda551f64eb4956"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00022313.jpg",
+        "bytes": 5483,
+        "sha256": "02e79f60e25d12632decdfb5a33676dce38e58085a02ff2627b2bf1981ad9ba4"
+      },
+      {
+        "source_member": "places365_standard/val/field-cultivated/Places365_val_00018372.jpg",
+        "bytes": 10179,
+        "sha256": "8b9ea88bcbb539fee8577123504a8559de63c8bde20f43929b31d25579ee5529"
+      }
+    ]
+  },
+  "places_fixture_note": "16 validation-partition JPEGs in a test-only ImageFolder; NOT the full training dataset",
+  "full_places_download": false,
+  "full_training": false,
+  "paper_scores_reproduced": false,
+  "fresh_operating_system": false,
+  "wheel_cache_reused": true,
+  "packaging_fix": "041b042: include star/datasets and both simulator core.py files",
+  "video_documentation_fix": "Robosuite factory enables hard backgrounds; native training setup needs video root",
+  "runtime_sha256": {
+    "star/rl/algos/stage1.py": "17a95029115a99d20ee190baaf4e7960d6af436ae00bf6525d6877a919bb5710",
+    "star/rl/algos/stage2.py": "45a6e99eae3dcfd6542bea19d16d4a29f20ec31a0bc7e7258639b2d3fe5231cb",
+    "star/datasets/replay.py": "22a3f4d5bfdf810bf785c906ae6e077c463d749f14de86fbb5c7b1144799ac70",
+    "star/rl/train_teacher.py": "e807a29bdb3b5af55fa5db564850fddac4e4454d69416902472c23d0ab604f6a",
+    "star/rl/train_stage2.py": "3a88c6f5466b117a40e0390c6ffcfa6e4171dce559503a70a5e28e0516cb42ec",
+    "star/evaluation/rl.py": "9f5c900de3c715de7f1941e11b70a7221f001079d59e2277365d18001086eb21",
+    "scripts/smoke_pipeline.py": "65767baff3ddfdfe52854624fc49b6d9cc0bf4e6b2899330276b2087e6e4543c"
+  }
+}

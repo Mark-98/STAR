@@ -1,0 +1,36 @@
+# Door Stage 1: single-update, no-clipping recipe used in the four-seed study.
+# This preset runs a fixed 500k steps; the study's adaptive stopping is not enabled.
+env: robosuite
+task_name: Door
+algo: star_stage1
+action_repeat: 1
+frame_stack: 3
+repr_dim: 256
+hidden_dim: 1024
+ln: true
+dyna: fwd
+dyna_alpha: 1
+use_target_enc: false
+encoder_tau: 0.05
+batch_size: 256
+lr: 0.00005
+alpha_lr: 0.0001
+actor_update_freq: 2
+critic_target_update_freq: 2
+init_steps: 1000
+num_seed_frames: 1000
+replay_buffer_num_workers: 2
+num_train_frames: 500000
+eval_every_frames: 500k
+num_eval_episodes: 30
+skip_eval: true
+save_freq: 50k
+save_snapshot: true
+buffer_save: true
+# Prepare merged replay at the end for Stage 2; this needs extra disk space.
+buffer_merge_on_finish: true
+seed: 300
+exp_name: door_teacher_s300
+wandb_mode: disabled
+wandb_project: STAR
+wandb_group: stage1
