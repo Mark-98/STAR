@@ -1,6 +1,7 @@
 <div align="center">
 
-# STAR
+# Control First, Robustness Next: Decoupled Representation Learning for Visual RL Generalization 
+## STAR(Seperate Then Align Representation)
 
 **Visual adaptation for reinforcement learning and Diffusion Policy**
 
